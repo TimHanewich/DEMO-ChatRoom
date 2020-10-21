@@ -30,5 +30,5 @@ function Login()
 
 
     //Redirect them to the chat page
-    window.location.href = "/chat.html";
+    window.location.href = "chat.html";
 }
