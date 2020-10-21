@@ -1,0 +1,11 @@
+Front end:
+
+The front end will send an object with these properties to the server as a "submit message" action
+-User (string, either "defendant", "plaintiff", "moderator")
+-Message (string)
+
+The back end will accept this object and store it in an array in a blob. The blob name will be that meeting ID.
+
+When the front end "requests" a refresh from the backend, the backend will send back a JSON object of an array with all of those messages.
+
+The front end will then parse that and display it on the chat window by showing a list of the messages in a list.
