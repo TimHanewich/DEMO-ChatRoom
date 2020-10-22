@@ -113,6 +113,7 @@ function SendMsg()
     //Get the msg
     var msg = document.getElementById("msgtext").value;
     console.log(msg);
+    document.getElementById("msgtext").value = ""; //Clear the contents
 
     reqr.open("POST", "https://timhchatroom.azurewebsites.net/api/SendMessage?meetingid=" + meetingid + "&person=" + person);
     reqr.onreadystatechange = OnCallComplete;
