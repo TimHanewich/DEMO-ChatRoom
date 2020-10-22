@@ -111,7 +111,7 @@ function SendMsg()
     console.log(meetingid);
 
     //Get the msg
-    var msg = document.getElementById("textinput").value;
+    var msg = document.getElementById("msgtext").value;
     console.log(msg);
 
     reqr.open("POST", "https://timhchatroom.azurewebsites.net/api/SendMessage?meetingid=" + meetingid + "&person=" + person);

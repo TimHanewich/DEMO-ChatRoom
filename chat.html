@@ -14,12 +14,15 @@
         
         <!--The bottom pane-->
         <div id="bottompane">
-            <button id="refresh" class="barbutton" onclick="Refresh()">Refresh</button>
-            
-            <input id="textinput" type="text">
-
-            <button id="send" class="barbutton" onclick="SendMsg()">Send</button>
-
+            <div id="LeftButton" class="ButtonContainer">
+                <img class="ImageIcon" onclick="Refresh()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Refresh_icon.svg/1024px-Refresh_icon.svg.png">
+            </div>
+            <div id="MsgInputArea">
+                <input type="text" id="msgtext">
+            </div>
+            <div id="RightButton" class="ButtonContainer">
+                <img class="ImageIcon" onclick="SendMsg()" src="https://img.icons8.com/ios/452/send.png">
+            </div>
         </div>
 
         <!--Scripts-->
